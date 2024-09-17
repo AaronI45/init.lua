@@ -10,14 +10,14 @@ return
 				function()
 					require("telescope.builtin").find_files({
 						no_ignore = false,
-						hidden = true,
+						hidden = false,
 					})
 				end,
 			}, 
 			{
 				"<C-p>",
 				function()
-					require("telescope.buildin").git_files({})
+					require("telescope.builtin").git_files({})
 				end,
 			},
 			{
